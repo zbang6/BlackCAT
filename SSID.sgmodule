@@ -1,5 +1,5 @@
 #!name=SSID助手
-#!desc=𝑆𝑢𝑟𝑔𝑒 ꫛꫀꪝ
+#!desc=zbang自用
 #!system=ios
 [Script]
 SSID助手 = debug=1,script-path=https://raw.githubusercontent.com/zbang6/master/master/wifi.js,type=event,event-name=network-changed,control-api=true
