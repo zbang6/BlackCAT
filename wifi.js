@@ -16,7 +16,7 @@ if (lkWifiLast!=(!!SSID ? SSID : "cellular")){
 
 function notify(mode) {
     setTimeout(function () {
-        !!mode ? $notification.post("Wi-Fi助手", "切换直连模式", `your SSID is ${SSID}`) : $notification.post("Wi-Fi助手", "切换规则模式", `${!!SSID ? "your SSID is " + SSID : "正在使用蜂窝网络"}`)
+        !!mode ? $notification.post("Wi-Fi助手","切换直连模式", `WIFI:${SSID}`) : $notification.post("Wi-Fi助手","切换规则模式", `${!!SSID ? "your SSID is " + SSID : "正在使用蜂窝网络"}`)
     })
 }
 
