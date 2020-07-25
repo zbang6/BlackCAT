@@ -1,12 +1,24 @@
-#!name=哔哩哔哩Pro
-#!desc=哔哩哔哩精简去广告、开启1080P+，(个人中心)默认禁用，需要自行开启
-#!system=ios
+#!name=自用合集
+#!desc=B站、知乎、抖音、Q-Search、比价评分
 
 [Rule]
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 
+//SOME MCN INFO MAY BE USEFUL
+//URL-REGEX,https://www.zhihu.com/api/v4/mcn/,REJECT
+
+DOMAIN,appcloud2.zhihu.com,REJECT
+
+//DO NOT GET CDN-BASED IP
+DOMAIN,118.89.204.198,REJECT
+
+USER-AGENT,AVOS*,REJECT
+URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|search/(top|preset|tab)|.*featured-comment-ad),REJECT
+AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
+
 [Script]
+#Bilibili
 收藏排行 = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/space\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
 首页 tab = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/resource/show/tab\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js
 bilibili feed = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/feed/index\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js
@@ -15,7 +27,12 @@ bilibili view = type=http-response,requires-body=1,max-size=0,pattern=https://ap
 bilibili reply = type=http-response,requires-body=1,max-size=0,pattern=https://api.bilibili.com/x/v2/reply/main\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js
 bilibili live = type=http-response,requires-body=1,max-size=0,pattern=https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js
 开启1080P+ = type=http-response,pattern=https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/Surge/master/Script/BiliHD.js
-
+#知乎
+zhihu people = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/people/,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js
+zhihu feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/moments/recommend,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js
+zhihu recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
+zhihu answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
+zhihu link = type=http-request,pattern=https?://link.zhihu.com/\?target=,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20link.js 
 
 [MITM]
-hostname = %APPEND% www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com
+hostname = %APPEND% www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198
