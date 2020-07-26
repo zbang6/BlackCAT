@@ -1,5 +1,8 @@
+#知乎
+^https://www\.zhihu\.com/question/ url script-response-body id77/Script/zhihu.js
 
-#=====
+脚本
+=====
 let html = $response.body
 let nonce= html.match(/nonce="[\w\-]*"/g)[1]
 
