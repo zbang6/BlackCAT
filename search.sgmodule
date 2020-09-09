@@ -2,7 +2,7 @@
 #!desc=Baidu、Google
 #!system=ios
 [MITM]
-hostname = %APPEND% *.baidu.com,www.google.*, encrypted.google.*
+hostname = %APPEND% *.baidu.com,www.google.*, encrypted.google.*, www.zhihu.com
 
 [Header Rewrite]
 #百度UA
