@@ -8,7 +8,7 @@ hostname = %APPEND% *.baidu.com,www.google.*, encrypted.google.*, www.zhihu.com
 #百度UA
 ^https?:\/\/.*\.baidu\.com header-replace User-Agent Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)$2
 #知乎UA
-^https:\/\/www\.zhihu\.com\/ header-replace (\r\n)User-Agent:.+(\r\n) header-replace $1User-Agent: Mozilla/5.0 (Windows Phone 10)$2
+^https?:\/\/www\.zhihu\.com url header-replace (\r\n)User-Agent:.+(\r\n) header-replace $1User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)$2
 
 
 [Script]
