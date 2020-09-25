@@ -1,6 +1,7 @@
 
 
-hostname=weather-data.apple.com, api.weather.com, *.bilibili.com, *.rr.tv, *.video.qq.com,glados.rocks,mobwsa.ximalaya.com,act.10010.com,m.client.10010.com,iface?.iqiyi.com
+hostname=*.bilibili.com, *.rr.tv, *.video.qq.com,mobwsa.ximalaya.com,act.10010.com,m.client.10010.com,iface?.iqiyi.com,api.m.jd.com
+
 
 
 #中国联通_Cookie
@@ -14,9 +15,6 @@ hostname=weather-data.apple.com, api.weather.com, *.bilibili.com, *.rr.tv, *.vid
 #爱奇艺_Cookie
 ^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
-#彩云天气_Cookie
-https:\/\/((weather-data\.apple)|(api.weather))\.com url script-request-header https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
-
 # 京东_Cookie
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 
@@ -29,6 +27,4 @@ https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-reques
 #腾讯视频_Cookie
 ^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
 
-#GLaDOS_Cookie
-https:\/\/glados\.rocks\/api\/user\/status url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js
 
