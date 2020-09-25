@@ -15,5 +15,3 @@ hostname = %APPEND% *.baidu.com,www.google.*, encrypted.google.*, www.zhihu.com
 Endless = type=http-response,pattern=https:\/\/encrypted\.google\..*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/zbang6/master/master/Surge/Js/Endless.js,script-update-interval=0
 Endless = type=http-response,pattern=https:\/\/www\.google\..*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zbang6/master/master/Surge/Js/Endless.js,script-update-interval=0
 Endless = type=http-response,pattern=http:\/\/www\.google\..*,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/zbang6/master/master/Surge/Js/Endless.js,script-update-interval=0
-
-知乎=type=http-response, pattern=^https:\/\/www\.zhihu\.com\/question, script-path=https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/zhihux.user.js, requires-body=true
