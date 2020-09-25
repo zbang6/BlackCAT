@@ -1,0 +1,34 @@
+
+
+hostname=weather-data.apple.com, api.weather.com, *.bilibili.com, *.rr.tv, *.video.qq.com,glados.rocks,mobwsa.ximalaya.com,act.10010.com,m.client.10010.com,iface?.iqiyi.com
+
+
+#中国联通_Cookie
+^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
+
+#喜马拉雅_Cookie
+^https?:\/\/.*\/mobile\-user\/homePage\/.* url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
+
+#爱奇艺_Cookie
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+
+#彩云天气_Cookie
+https:\/\/((weather-data\.apple)|(api.weather))\.com url script-request-header https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
+
+# 京东_Cookie
+https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+# BiliBili_Cookie
+^https:\/\/(www|live)\.bilibili\.com\/?.? url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js
+
+#人人视频_Cookie
+^https:\/\/api\.rr\.tv\/user\/profile url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.cookie.js
+
+#腾讯视频_Cookie
+^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.cookie.js
+
+#GLaDOS_Cookie
+https:\/\/glados\.rocks\/api\/user\/status url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js
+
