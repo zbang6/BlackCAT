@@ -18,4 +18,4 @@ BiliBili Cookie = script-path=https://raw.githubusercontent.com/chavyleung/scrip
 
 
 [MITM]
-hostname = %APPEND%,  *.video.qq.com, *.bilibili.com,,*.rr.tv,api.m.jd.com,ifac*.iqiyi.com,api.m.jd.com,mobwsa.ximalaya.com
+hostname = %APPEND%,  *.video.qq.com, *.bilibili.com,*.rr.tv,api.m.jd.com,ifac*.iqiyi.com,api.m.jd.com,mobwsa.ximalaya.com
