@@ -1,5 +1,12 @@
 纯自用，无维护。
 
-QuantumultX规则照抄自[神机小姐姐](https://github.com/DivineEngine/Profiles/tree/master/Quantumult)
+规则照抄自[花姐](https://github.com/DivineEngine/Profiles/tree/master)
 
-Surge模块自用
+模块自用整理
+
+鸣谢
+♡ [@chavyleung](https://github.com/chavyleung/scripts)
+
+♡ [@NobyDa](https://github.com/NobyDa)
+
+♡ [@Peng-YM](https://github.com/Peng-YM/QuanX)
