@@ -4,9 +4,9 @@ hostname=trade-acs.m.taobao.com,ios.prod.ftl.netflix.com,*.baidu.com, www.google
 
 
 #TikTok Unlock
-(?<=tz_name=)Asia/Hong_Kong(?=&) url 307 Asia/Tokyo
-(?<=&app_version=)17..(?=.?.?&) url 307 1
-(?<=\?version_code=)17..(?=.?.?&) url 307 1
+(?<=_region=)CN(?=&) url 307 KR
+(?<=&app_version=)1[6-9]..(?=.?.?&) url 307 17..
+(?<=\?version_code=)1[6-9]..(?=.?.?&) url 307 17..
 
 #百度网盘手机页面优化
 ^https:\/\/pan\.baidu\.com url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (Windows Phone 10)$2
