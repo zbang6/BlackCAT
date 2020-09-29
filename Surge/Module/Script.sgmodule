@@ -1,5 +1,5 @@
 #!name=自用合集
-#!desc=Script、Rwrite、Rule
+#!desc=Script、Rewrite、Rule
 
 [Rule]
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJECT
