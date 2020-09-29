@@ -6,8 +6,6 @@
 #Emby Premiere
 ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) url script-echo-response https://subweb.oss-cn-hongkong.aliyuncs.com/Script/embycrack.js
 
-#AoLiGei VIP
-^https?:\/\/1008610010\.yohui\.vip\/index\.php\/Api\/LiveApi\/getMovietime url script-response-body AoLiGei.js
 
 
 hostname = 1008610010.yohui.vip,mb3admin.com,vip1.kuwo.cn, *.kuwo.cn
