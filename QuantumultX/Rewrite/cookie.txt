@@ -1,13 +1,9 @@
 
 
-hostname=*.bilibili.com, *.rr.tv, *.video.qq.com,mobwsa.ximalaya.com,act.10010.com,m.client.10010.com,iface?.iqiyi.com,api.m.jd.com
+hostname=*.bilibili.com, *.rr.tv, *.video.qq.com,mobwsa.ximalaya.com,iface?.iqiyi.com,api.m.jd.com
 
 
 
-#中国联通_Cookie
-^https?:\/\/act.10010.com\/SigninApp\/signin\/querySigninActivity.htm url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
-^https?:\/\/act.10010.com\/SigninApp(.*?)\/signin\/daySign url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
-^https?:\/\/m.client.10010.com\/dailylottery\/static\/(textdl\/userLogin|active\/findActivityInfo) url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.cookie.js
 
 #喜马拉雅_Cookie
 ^https?:\/\/.*\/mobile\-user\/homePage\/.* url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
