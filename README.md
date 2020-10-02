@@ -20,5 +20,4 @@
 
 ♡ [evilbutcher](https://github.com/evilbutcher/Quantumult_X/tree/master)
 
- **我们**
  
