@@ -2,7 +2,6 @@
 
 规则照抄自[花姐](https://github.com/DivineEngine/Profiles/tree/master)
 
-模块自用整理
 
 鸣谢
 
