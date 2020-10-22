@@ -18,7 +18,8 @@ URL-REGEX,https://api.zhihu.com/(ad|drama|fringe|commercial|market/popover|searc
 AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 
 [Script]
-
+# >WorkingCopy
+WorkingCopy.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/workingcopy/workingcopy.js,type=http-response,pattern=^https:\/\/education\.github\.com\/api\/user$
 
 # >马卡龙
 mkl.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/mkl.js,type=http-response,pattern=https://app.api.versa-ai.com/pay/order/iap/check
@@ -205,6 +206,6 @@ douyin_hot = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v
 ^https?:\/\/[\w-]+\.amemv\.com\/aweme\/v\d\/hot/search\/video\/list\/ https://aweme.snssdk.com/aweme/v1/hot/search/video/list/ header
 
 [MITM]
-hostname = %APPEND% www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, duckduckgo.com, api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.m.jd.com,ios.prod.ftl.netflix.com, *.amemv.com, aweme.snssdk.com,links.jianshu.com,mb3admin.com,1008610010.yohui.vip,vip1.kuwo.cn, *.kuwo.cn,api.flexibits.com,app.api.versa-ai.com
+hostname = %APPEND% www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com, www.zhihu.com, api.zhihu.com, link.zhihu.com, 118.89.204.198, duckduckgo.com, api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,api.m.jd.com,ios.prod.ftl.netflix.com, *.amemv.com, aweme.snssdk.com,links.jianshu.com,mb3admin.com,1008610010.yohui.vip,vip1.kuwo.cn, *.kuwo.cn,api.flexibits.com,app.api.versa-ai.com,education.github.com
 
 
