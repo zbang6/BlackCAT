@@ -10,7 +10,7 @@ TG频道:@meetashare
 */
 
 var wifiname = $network.wifi.ssid;
-var proxywifi = "OpenWrt,zhang_5G";
+var proxywifi = "zhang_5G";
 if (wifiname == proxywifi){
 	$surge.setOutboundMode("direct");
 	//$notification.post("🔆Connected WiFi : OpenWrt","🤖Surge Outbound Mode : Direct",);
