@@ -13,12 +13,12 @@ var wifiname = $network.wifi.ssid;
 var proxywifi = "OpenWrt";
 if (wifiname == proxywifi){
 	$surge.setOutboundMode("direct");
-	//$notification.post("🗣","您目前处于Proxy Mode","Surge已自动变为直连模式");
+	$notification.post("🗣您目前处于Proxy Mode","🤖Surge已自动变为直连模式");
 	
 }
 else{
 	$surge.setOutboundMode("rule");
-	//$notification.post("🗣","您目前处于Direct Mode","Surge已自动变为规则模式");
+	$notification.post("🗣您目前处于Direct Mode","🤖Surge已自动变为规则模式");
 }
 $done();
 
