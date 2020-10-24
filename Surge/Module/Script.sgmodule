@@ -19,7 +19,7 @@ AND,((USER-AGENT,ZhihuHybrid*), (URL-REGEX,.*recommend)),REJECT
 
 [Script]
 # >Running Mode
-event network-changed debug=1,script-path=wifi_proxy.js
+event network-changed debug=1,script-path=https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/wifi_proxy.js
 
 # >马卡龙
 mkl.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/mkl.js,type=http-response,pattern=https://app.api.versa-ai.com/pay/order/iap/check
