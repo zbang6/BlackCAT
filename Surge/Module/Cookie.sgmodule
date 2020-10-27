@@ -16,7 +16,5 @@ BiliBili Cookie = script-path=https://raw.githubusercontent.com/chavyleung/scrip
 
 喜马拉雅Cookie = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js,type=http-request,pattern= ^https?:\/\/.*\/mobile\-user\/homePage\/.* 
 
-机场签到Cookie = type=http-request, pattern=https:\/\/aloy\.asia, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
-
 [MITM]
-hostname = %APPEND%,  *.video.qq.com, *.bilibili.com,*.rr.tv,api.m.jd.com,ifac*.iqiyi.com,api.m.jd.com,mobwsa.ximalaya.com,aloy.asia
+hostname = %APPEND%,  *.video.qq.com, *.bilibili.com,*.rr.tv,api.m.jd.com,ifac*.iqiyi.com,api.m.jd.com,mobwsa.ximalaya.com
