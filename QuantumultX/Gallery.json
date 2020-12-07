@@ -8,7 +8,6 @@
     "30 0 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=Bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png, enabled=true",
     "40 0 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频, img-url=https://raw.githubusercontent.com/Orz-3/task/master/videoqq.png, enabled=true",
     "50 0 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js, tag=人人视频, img-url=https://raw.githubusercontent.com/Orz-3/task/master/rrtv.png, enabled=true",
-    "7,8 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true"
     "30 9 * * * https://gitee.com/lxk0301/scripts/raw/master/jd_bean_change.js, tag=京豆变动通知, img-url=https://raw.githubusercontent.com/HotKids/Rules/master/Quantumult/X/Images/Task/jd.png, enabled=true"   
     ]
 }
