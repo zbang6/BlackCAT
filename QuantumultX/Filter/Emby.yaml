@@ -2,3 +2,4 @@ payload:
   # > Emby(Nexitally&W8ves)
   - DOMAIN-SUFFIX,emby.nexitally.com
   - DOMAIN-SUFFIX,emby.w8ves.co
+  - DOMAIN-SUFFIX,emby.plusmedia.site
