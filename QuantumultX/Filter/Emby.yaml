@@ -1,7 +1,7 @@
 payload:
   # > Emby
-  - DOMAIN-SUFFIX,emby.nexitally.com
-  - DOMAIN-SUFFIX,emby.w8ves.co
-  - DOMAIN-SUFFIX,emby.plusmedia.site
-  - DOMAIN-SUFFIX,emby.wtf
-  - DOMAIN-SUFFIX,emby1.jmsooo.com
+  - DOMAIN,emby.nexitally.com
+  - DOMAIN,emby.w8ves.co
+  - DOMAIN,emby.plusmedia.site
+  - DOMAIN,emby.wtf
+  - DOMAIN,emby1.jmsooo.com
