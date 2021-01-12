@@ -1,4 +1,3 @@
-//http://ip-api.com/json/?lang=en
 if ($response.statusCode != 200) {
   $done(null);
 }
