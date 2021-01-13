@@ -1,5 +1,6 @@
 payload:
   # > Emby
+  - DOMAIN,emby.linkfireka.xyz
   - DOMAIN,emby.nexitally.com
   - DOMAIN,emby.w8ves.co
   - DOMAIN,emby.plusmedia.site
