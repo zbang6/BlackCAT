@@ -1,7 +1,6 @@
 
 
-hostname=sub.store,ios.prod.ftl.netflix.com,*.baidu.com, www.google.*, encrypted.google.*,*.amemv.com, aweme.snssdk.com,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com,links.jianshu.com, link.zhihu.com,*.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com
-
+hostname=ios.prod.ftl.netflix.com,*.baidu.com, www.google.*, encrypted.google.*,*.amemv.com, aweme.snssdk.com,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com
 
 # >BoxJs
 ^https?://hello.com url script-analyze-echo-response https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js
