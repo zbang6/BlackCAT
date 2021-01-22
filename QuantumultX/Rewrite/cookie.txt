@@ -8,7 +8,7 @@ hostname=*.bilibili.com,*.rr.tv,*.video.qq.com,mobwsa.ximalaya.com,ifac*.iqiyi.c
 ^https?:\/\/.*\/mobile\-user\/homePage\/.* url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.cookie.js
 
 #爱奇艺_Cookie
-^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
+^https?:\/\/iface(\d)?\.iqiyi\.com\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Scripts/master/iQIYI-DailyBonus/iQIYI.js
 
 #京东_Cookie
 https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
