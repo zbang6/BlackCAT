@@ -3,8 +3,8 @@ if ($response.statusCode != 200) {
 }
 
 const emojis= ['🆘','🈲','⚠️','🔞','📵','🚦','🏖','🖥','📺','🐧','🐬','🦉','🍄','⛳️','🚴','🤑','👽','🤖','🎃', '👺', '👁', '🐶', '🐼','🐌', '👥']
-var city0 = "高谭市";
-var isp0 = "Cross-GFW.org";
+var city0 = "🕹运行中";
+var isp0 = "Hello";
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -24,7 +24,7 @@ function ISP_ValidCheck(para) {
   return para
   } else
   {
-  return Hello
+  return isp0
 //emojis[getRandomInt(emojis.length)]
   }
 }
