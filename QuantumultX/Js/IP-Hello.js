@@ -41,7 +41,7 @@ var flags = new Map([[ "AC" , "🇦🇨" ] , [ "AF" , "🇦🇫" ] , [ "AI" , "�
 var body = $response.body;
 var obj = JSON.parse(body);
 var title =City_ValidCheck(obj['city0']);//+Area_check(obj['country']);
-var subtitle = ISP_ValidCheck(obj['org']);
+var subtitle = '🗣'+ISP_ValidCheck(obj['isp0']);
 var ip = obj['query'];
 var description = '🗣'+obj['isp0'] ;
 $done({title, subtitle, ip, description});
