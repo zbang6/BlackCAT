@@ -4,7 +4,7 @@ if ($response.statusCode != 200) {
 
 const emojis= ['🆘','🈲','⚠️','🔞','📵','🚦','🏖','🖥','📺','🐧','🐬','🦉','🍄','⛳️','🚴','🤑','👽','🤖','🎃', '👺', '👁', '🐶', '🐼','🐌', '👥']
 var city0 = "💋 运行中";
-var isp0 = "Shawn is the worst!";
+var isp0 = "Shawn is the worst !";
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
@@ -41,7 +41,7 @@ var flags = new Map([[ "AC" , "🇦🇨" ] , [ "AF" , "🇦🇫" ] , [ "AI" , "�
 var body = $response.body;
 var obj = JSON.parse(body);
 var title =City_ValidCheck(obj['city0']);//+Area_check(obj['country']);
-var subtitle = '👤'+ISP_ValidCheck(obj['isp']);
+var subtitle = '👤 '+ISP_ValidCheck(obj['isp']);
 var ip = obj['query'];
 var description = '🗣'+obj['isp0'] ;
 $done({title, subtitle, ip, description});
