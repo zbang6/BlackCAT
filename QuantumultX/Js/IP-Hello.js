@@ -4,7 +4,7 @@ if ($response.statusCode != 200) {
 
 const emojis= ['🆘','🈲','⚠️','🔞','📵','🚦','🏖','🖥','📺','🐧','🐬','🦉','🍄','⛳️','🚴','🤑','👽','🤖','🎃', '👺', '👁', '🐶', '🐼','🐌', '👥']
 var city0 = "💋 运行中";
-var isp0 = "Shawn is the worst!";
+var isp0 = "Shawn is the worst !";
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
