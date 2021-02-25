@@ -3,7 +3,7 @@
 hostname=ios.prod.ftl.netflix.com,*.baidu.com, www.google.*, encrypted.google.*,*.amemv.com, aweme.snssdk.com,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com
 
 # >BoxJs
-^https?://hello.com url script-analyze-echo-response https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js
+^https?://hello.com url script-analyze-echo-response https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js
 
 # >Wiki重定向
 ^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) url 302 https://www.wikiwand.com/zh$2
