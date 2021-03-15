@@ -12,8 +12,7 @@ https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https:
 https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fantastical.js
 
 # Noverdue Pro 
-https:\/\/api\.revenuecat\.com url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/revenuecat.js
-
+https:\/\/api\.revenuecat\.com url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/revenuecat.js
 # Bear Pro
 //^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-request-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Bear.js
 
