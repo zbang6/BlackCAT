@@ -1,0 +1,9 @@
+payload:
+  # Emby
+  - DOMAIN,emby.linkfireka.xyz
+  - DOMAIN,emby.nexitally.com
+  - DOMAIN,emby.plusmedia.site
+  - DOMAIN,emby.wtf
+  - DOMAIN,cf1.jmsooo.com
+  - DOMAIN-KEYWORD,emby
+  - IP-CIDR,38.94.109.97/32,no-resolve
