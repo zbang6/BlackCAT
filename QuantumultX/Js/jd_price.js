@@ -201,13 +201,13 @@ function adword_obj() {
     return {
         "bId": "eCustom_flo_199",
         "cf": {
-            "bgc": "#ffffff",
+            "bgc": "#1E2658",
             "spl": "empty"
         },
         "data": {
             "ad": {
                 "adword": "",
-                "textColor": "#8C8C8C",
+                "textColor": "#1E2658",
                 "color": "#1E2658",
                 "newALContent": true,
                 "hasFold": true,
