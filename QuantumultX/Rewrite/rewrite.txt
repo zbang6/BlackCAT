@@ -1,6 +1,6 @@
 
 
-hostname=ios*.prod.ftl.netflix.com,*.baidu.com, www.google.*, encrypted.google.*,*.amemv.com, aweme.snssdk.com,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com
+hostname=ios*.prod.ftl.netflix.com,*.baidu.com, www.google.*, encrypted.google.*,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com
 
 # >BoxJs
 ^https?://hello.com url script-analyze-echo-response https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js
@@ -34,6 +34,3 @@ http:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.
 https:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
 https:\/\/encrypted\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
 
-# >抖音去广告去水印
-^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-request-header https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
-^https?:\/\/.+?\.amemv\.com\/aweme\/v\d\/(feed|aweme\/post|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list)\/ url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Aweme.js
