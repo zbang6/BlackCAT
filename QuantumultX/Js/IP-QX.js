@@ -4,7 +4,7 @@ if ($response.statusCode != 200) {
 
 const emojis= ['🆘','🈲','⚠️','🔞','📵','🚦','🏖','🖥','📺','🐧','🐬','🦉','🍄','⛳️','🚴','🤑','👽','🤖','🎃', '👺', '👁', '🐶', '🐼','🐌', '👥']
 var city0 = "ʜᴇʟʟᴏ";
-var isp0 = "👓Big Brother is watching you​​";
+var isp0 = "Big Brother is watching you​​";
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
