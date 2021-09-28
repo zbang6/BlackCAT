@@ -49,38 +49,3 @@ var flags = new Map([[ "AC" , "🇦🇨" ] , [ "AF" , "🇦🇫" ] , [ "AI" , "�
 })()
 .finally(() => $.done());
 
-function test(filmId) {
-  return new Promise((resolve, reject) => {
-    let option = {
-      url: BASE_URL + filmId,
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36',
-      },
-    }
-    $task.fetch(option).then (response => {
-      console.log(response.statusCode)
-      if (response.statusCode === 404) {
-        resolve('Not Found')
-        return
-      }
-
-      if (response.statusCode === 403) {
-        resolve('Not Available')
-        return
-      }
-
-      if (response.statusCode === 200) {
-        let url = response.headers['X-Originating-URL']
-        let region = url.split('/')[3]
-        region = region.split('-')[0]
-        if (region == 'title') {
-          region = 'us'
-        }
-        resolve(region)
-        return
-      }
-      reject('Error')
-    })
-  })
-}
