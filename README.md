@@ -1,4 +1,4 @@
-纯自用，不维护。
+纯自用 不维护
 
 规则照抄自[花姐](https://github.com/DivineEngine/Profiles/tree/master)
 
