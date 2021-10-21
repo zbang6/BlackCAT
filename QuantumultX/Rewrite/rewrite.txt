@@ -1,6 +1,9 @@
 
 
-hostname=ios*.prod.ftl.netflix.com, www.google.*, encrypted.google.*,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com
+hostname=ios*.prod.ftl.netflix.com, www.google.*, encrypted.google.*,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com,ap*.bilibili.com
+
+# >BiliBili-HD
+https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://gitee.com/Sunert/Scripts/raw/master/Script/Bilibili/BiliHD.js
 
 # >BoxJs
 ^https?://hello.com url script-analyze-echo-response https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js
