@@ -3,6 +3,8 @@ hostname=duckduckgo.com
 
 
 #Q-Search
+^https:\/\/duckduckgo.com\/\?q=ccn&.+ url 302 https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
+
 # gm (Google图片)
 ^https:\/\/duckduckgo.com\/\?q=gm\+([^&]+).+ url 302 https://www.google.com/search?&tbm=isch&q=$1
 # gh (GitHub)
