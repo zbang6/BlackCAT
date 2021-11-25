@@ -8,16 +8,11 @@ https?:\/\/biz\.caiyunapp\.com\/(membership_rights|v2\/user) url script-response
 #Emby Premiere
 ^https:\/\/mb3admin\.com\/admin\/service(\/registration\/validateDevice|\/appstore\/register|\/registration\/validate|\/registration\/getStatus|\/supporter\/retrievekey) url script-echo-response https://subweb.oss-cn-hongkong.aliyuncs.com/Script/embycrack.js
 
-# 马卡龙 
-https://app.api.versa-ai.com/pay/order/iap/check url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/mkl.js
-
 # Fantadtical
 https:\/\/api\.flexibits\.com\/(v1\/auth\/device|v1\/account\/details) url script-response-body https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/fantastical.js
 
-# Noverdue Pro 
-https:\/\/api\.revenuecat\.com url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/revenuecat.js
 # Bear Pro
 //^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-request-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Bear.js
 
-hostname = biz.caiyunapp.com,mb3admin.com,vip1.kuwo.cn, *.kuwo.cn,app.api.versa-ai.com,api.flexibits.com,api.revenuecat.com
+hostname = biz.caiyunapp.com,mb3admin.com,vip1.kuwo.cn, *.kuwo.cn,app.api.versa-ai.com,api.flexibits.com
 
