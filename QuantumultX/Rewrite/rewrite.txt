@@ -1,29 +1,18 @@
 
 
-hostname=ios*.prod.ftl.netflix.com, www.google.*, encrypted.google.*,www.zhihu.com,www.google.cn,*.wikipedia.org,*.wikiwand.com,ap*.bilibili.com,api.flexibits.com
+hostname= www.google.*, encrypted.google.*,www.zhihu.com,ap*.bilibili.com,sub.store
 
 # >BiliBili-HD
 https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://gitee.com/Sunert/Scripts/raw/master/Script/Bilibili/BiliHD.js
 
-# >Fantastical VIP
-^https:\/\/api\.flexibits\.com\/v1\/(auth|account)\/(device|details|appstore-receipt)\/$ url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Fantastical.js
+# >SubStore
+^https?:\/\/sub\.store url script-analyze-echo-response https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js
 
 # >BoxJs
 ^https?://hello.com url script-analyze-echo-response https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js
 
-# >Wiki重定向
-^https://zh.(m.)?wikipedia.org/zh(-\w*)?(?=/) url 302 https://www.wikiwand.com/zh$2
-^https://(\w*).(m.)?wikipedia.org/wiki url 302 https://www.wikiwand.com/$1
-
-# >Google重定向
-^(http|https):\/\/(www.)?(g|google)\.cn url 302 https://www.google.com
-
 # >知乎UA
 ^https?:\/\/www\.zhihu\.com url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)$2
-
-# >Netflix评分
-^https?://ios.*?\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
-^https?://ios.*?\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
 
 # >腾讯视频去广告
 ^https?+:\/\/vv\.video\.qq\.com\/getvmind\? url reject-200
@@ -33,4 +22,5 @@ https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/
 http:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
 https:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
 https:\/\/encrypted\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
+
 
