@@ -30,7 +30,7 @@ Sub_info = script-name=Sub_info,update-interval=600
   let args = getArgs();
   let info = await getDataInfo(args.url);
   if (!info) $done();
-  let resetDayLeft = getRmainingDays(parseInt(args["reset_day"]));
+
 
   let used = info.download + info.upload;
   let total = info.total;
