@@ -35,38 +35,17 @@ Sub_info = script-name=Sub_info,update-interval=600
   let used = info.download + info.upload;
   let total = info.total;
   let expire = args.expire || info.expire;
-  let content = [`Usage：${bytesToSize(used)} > ${bytesToSize(total)}`];
+  let content = [`Usage：${bytesToSize(used)} ➤ ${bytesToSize(total)}`];
 
-  if (resetDayLeft) {
-    content.push(`Reset：Left ${resetDayLeft} Day`);
-  }
-  if (expire) {
-    if (/^[\d.]+$/.test(expire)) expire *= 1000;
-    content.push(`Expire in：${formatTime(expire)}`);
-  }
-
-  let now = new Date();
-  let hour = now.getHours();
-  let minutes = now.getMinutes();
-  hour = hour > 9 ? hour : "0" + hour;
-  minutes = minutes > 9 ? minutes : "0" + minutes;
+  
 
   $done({
-    title: `${args.title} | ${hour}:${minutes}`,
+    title: `${args.title}`,
     content: content.join("\n"),
     icon: args.icon || "airplane.circle",
     "icon-color": args.color || "#007aff",
   });
 })();
-
-function getArgs() {
-  return Object.fromEntries(
-    $argument
-      .split("&")
-      .map((item) => item.split("="))
-      .map(([k, v]) => [k, decodeURIComponent(v)])
-  );
-}
 
 function getUserInfo(url) {
   let request = { headers: { "User-Agent": "Quantumult%20X" }, url };
@@ -109,23 +88,6 @@ async function getDataInfo(url) {
   );
 }
 
-function getRmainingDays(resetDay) {
-  if (!resetDay) return;
-
-  let now = new Date();
-  let today = now.getDate();
-  let month = now.getMonth();
-  let year = now.getFullYear();
-  let daysInMonth;
-
-  if (resetDay > today) {
-    daysInMonth = 0;
-  } else {
-    daysInMonth = new Date(year, month + 1, 0).getDate();
-  }
-
-  return daysInMonth - today + resetDay;
-}
 
 function bytesToSize(bytes) {
   if (bytes === 0) return "0B";
@@ -133,12 +95,4 @@ function bytesToSize(bytes) {
   sizes = ["B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
   let i = Math.floor(Math.log(bytes) / Math.log(k));
   return (bytes / Math.pow(k, i)).toFixed(2) + " " + sizes[i];
-}
-
-function formatTime(time) {
-  let dateObj = new Date(time);
-  let year = dateObj.getFullYear();
-  let month = dateObj.getMonth() + 1;
-  let day = dateObj.getDate();
-  return year + "-" + month + "-" + day ;
 }
