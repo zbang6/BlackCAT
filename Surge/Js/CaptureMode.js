@@ -1,7 +1,6 @@
 !(async () => {
     let module = "MitM All Hostnames",
         panel = { title: module, icon: "tray.and.arrow.down.fill" },
-        showHostname = true,
         capture,
         mitmall,
         color1,
