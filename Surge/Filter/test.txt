@@ -1,1 +1,0 @@
-vmess=192.168.1.1:443, method=chacha20-ietf-poly1305, password=23ad6b10-8d1a-40f7-8ad0-e3e35cd32291, obfs=ws, obfs-host=example.com, obfs-uri=/ws, tls13=true, fast-open=false, udp-relay=false, tag=日本-nekoAZ
