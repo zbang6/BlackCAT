@@ -5,9 +5,7 @@ DOMAIN-SUFFIX,easelive.tv
 DOMAIN-SUFFIX,omtrdc.net
 DOMAIN-SUFFIX,neulion.com
 DOMAIN-SUFFIX,akamaized.net
-DOMAIN,api2.amplitude.com
-DOMAIN,neulionnbaovod-a.akamaihd.net
-DOMAIN,nlnbamdnyc-a.akamaihd.net
-DOMAIN,neulion-a.akamaihd.net
-DOMAIN,dpm.demdex.net
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,amplitude.com
+DOMAIN-SUFFIX,demdex.net
 DOMAIN-KEYWORD,nba
