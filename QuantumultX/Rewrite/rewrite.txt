@@ -1,6 +1,6 @@
 
 
-hostname= www.google.*, encrypted.google.*,www.zhihu.com,ap*.bilibili.com,sub.store
+hostname= www.google.*, encrypted.google.*,www.zhihu.com,ap*.bilibili.com,sub.store,vv.video.qq.com
 
 # >BiliBili-HD
 https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://gitee.com/Sunert/Scripts/raw/master/Script/Bilibili/BiliHD.js
