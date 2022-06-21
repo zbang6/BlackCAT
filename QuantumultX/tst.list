@@ -1,0 +1,1 @@
+shadowsocks=example.com:80, method=chacha20, password=pwd, fast-open=false, udp-relay=true, udp-over-tcp=true, tag=台湾||01
