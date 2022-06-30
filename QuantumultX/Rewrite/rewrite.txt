@@ -1,6 +1,6 @@
 
 
-hostname= www.google.*, encrypted.google.*,www.zhihu.com,ap*.bilibili.com,sub.store,vv.video.qq.com
+hostname= www.google.*, encrypted.google.*,www.zhihu.com,ap*.bilibili.com,sub.store,vv.video.qq.com,ios-*.prod.ftl.netflix.com,ios.prod.ftl.netflix.com
 
 # >BiliBili-HD
 https:\/\/ap(p|i)\.bilibili\.com\/((pgc\/player\/api\/playurl)|(x\/v2\/account\/myinfo\?)|(x\/v2\/account/mine\?)) url script-response-body https://gitee.com/Sunert/Scripts/raw/master/Script/Bilibili/BiliHD.js
@@ -19,4 +19,5 @@ http:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.
 https:\/\/www\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
 https:\/\/encrypted\.google\..* url script-response-body https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Js/Endless.js
 
-
+^https?://ios(-.*)?\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-request-header https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
+^https?://ios(-.*)?\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js
