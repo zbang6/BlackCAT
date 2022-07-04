@@ -1,5 +1,5 @@
 DOMAIN-SUFFIX,gmail.com,Mail
-DOMAIN-SUFFIX,outlook.com,direct
+DOMAIN-SUFFIX,outlook.com,Direct
 DOMAIN-SUFFIX,mail.me.com,Mail
-DOMAIN-SUFFIX,mail.infomaniak.com,direct
-DOMAIN-SUFFIX,hotmail.com,direct
+DOMAIN-SUFFIX,mail.infomaniak.com,Direct
+DOMAIN-SUFFIX,hotmail.com,Direct
