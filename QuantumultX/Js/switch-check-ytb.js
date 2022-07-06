@@ -59,7 +59,7 @@ $configuration.sendMessage(message).then(resolve => {
         pflag = JSON.stringify(resolve.ret[message.content])? pflag:1
         console.log("YouTube Premium 检测")
         console.log("节点or策略组："+pflag)
-        if (pflag==1) {
+        if (pflag==0) {
         console.log("节点数量："+resolve.ret[policy]["candidates"].length)
         if(resolve.ret[policy]["candidates"].length==0) {
             $done({"title":"YouTube 去广告检测","htmlMessage":`<p style="text-align: center; font-family: -apple-system; font-size: large; font-weight: thin"><br><b>😭 无有效节点</b>`});
