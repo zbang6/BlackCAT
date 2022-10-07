@@ -1,9 +1,8 @@
 
-hostname=*.bilibili.com,*.rr.tv,*.video.qq.com,mobwsa.ximalaya.com,ifac*.iqiyi.com,wq.jd.com, m.jingxi.com
+hostname=*.bilibili.com,*.rr.tv,*.video.qq.com,mobwsa.ximalaya.com,ifac*.iqiyi.com, m.jingxi.com
 
 
-#京喜
-^https\:\/\/wq\.jd\.com\/cubeactive\/farm\/dotask url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
+
 
 ^https\:\/\/m\.jingxi\.com\/dreamfactory\/generator\/CollectCurrentElectricity url script-request-header https://raw.githubusercontent.com/whyour/hundun/master/quanx/jx_tokens.js
 
