@@ -1,0 +1,22 @@
+payload:
+  # NBA
+  - DOMAIN,aax-fe-sin.amazon-adsystem.com
+  - DOMAIN,pubads.g.doubleclick.net
+  - DOMAIN-SUFFIX,bitmovin.com
+  - DOMAIN-SUFFIX,eu-central-1.amazonaws.com
+  - DOMAIN-SUFFIX,in.appcenter.ms
+  - DOMAIN-SUFFIX,nba.com
+  - DOMAIN-SUFFIX,opin.media
+  - DOMAIN-SUFFIX,endeavorstreaming.net
+  - DOMAIN-SUFFIX,easelive.tv
+  - DOMAIN-SUFFIX,omtrdc.net
+  - DOMAIN-SUFFIX,neulion.com
+  - DOMAIN-SUFFIX,akamaized.net
+  - DOMAIN-SUFFIX,akamaihd.net
+  - DOMAIN-SUFFIX,amplitude.com
+  - DOMAIN-SUFFIX,demdex.net
+  - DOMAIN-SUFFIX,akamaistream.net
+  - DOMAIN-SUFFIX,akamai.com
+  - DOMAIN-SUFFIX,akamai.net
+  - DOMAIN-SUFFIX,akamaiedge.net
+  - DOMAIN-KEYWORD,nba
