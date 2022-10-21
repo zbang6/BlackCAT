@@ -1,4 +1,6 @@
 # > NBA
+DOMAIN,pubads.g.doubleclick.net
+DOMAIN-SUFFIX,bitmovin.com
 DOMAIN-SUFFIX,kinesis.eu-central-1.amazonaws.com
 DOMAIN-SUFFIX,in.appcenter.ms
 DOMAIN-SUFFIX,nba.com
