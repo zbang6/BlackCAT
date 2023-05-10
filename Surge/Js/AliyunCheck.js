@@ -17,7 +17,7 @@ https://auth.aliyundrive.com/v2/account/token
 [MITM]
 hostname = %APPEND% auth.aliyundrive.com
 */
-const lk = new ToolKit(`阿里云盘签到`, `AliYunPanCheckIn`, {"httpApi": "ffff@10.0.0.19:6166"})
+const lk = new ToolKit(`阿里云盘签到②`, `AliYunPanCheckIn`, {"httpApi": "ffff@10.0.0.19:6166"})
 const aliYunPanTokenKey = 'lkAliYunPanTokenKey'
 let aliYunPanToken = lk.getVal(aliYunPanTokenKey, '')
 const aliYunPanRefreshTokenKey = 'lkAliYunPanRefreshTokenKey'
@@ -73,14 +73,14 @@ function getCookie() {
             let refreshToken = data["refresh_token"]
             if (refreshToken) {
                 lk.setVal(aliYunPanRefreshTokenKey, refreshToken)
-                lk.appendNotifyInfo('🎉成功获取阿里云盘refresh_token，可以关闭相应脚本')
+                lk.appendNotifyInfo('🎉成功获取阿里云盘②refresh_token，可以关闭相应脚本')
             } else {
                 lk.execFail()
-                lk.appendNotifyInfo('❌获取阿里云盘token失败，请稍后再试')
+                lk.appendNotifyInfo('❌获取阿里云盘②token失败，请稍后再试')
             }
         } catch (e) {
             lk.execFail()
-            lk.appendNotifyInfo('❌获取阿里云盘token失败')
+            lk.appendNotifyInfo('❌获取阿里云盘②token失败')
         }
         lk.msg('')
     }
@@ -90,7 +90,7 @@ async function all() {
     let hasNeedSendNotify = true
     if (aliYunPanRefreshToken == '') {
         lk.execFail()
-        lk.appendNotifyInfo(`⚠️请先打开阿里云盘登录获取refresh_token`)
+        lk.appendNotifyInfo(`⚠️请先打开阿里云盘②登录获取refresh_token`)
     } else {
         await refreshToken()
         let hasAlreadySignIn = await signIn()
