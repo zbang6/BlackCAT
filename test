@@ -1,0 +1,147 @@
+[general]
+//server_check_url=http://cp.cloudflare.com/generate_204
+server_check_timeout=20000
+dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me
+excluded_routes=239.255.255.250/32
+//fallback_udp_policy=direct
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/zbang6/BlackCAT/master/QuantumultX/Js/IP-QX.js
+//geo_location_checker=disabled
+resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+//resource_parser_url=resource-parser.js
+profile_img_url=https://raw.githubusercontent.com/zbang6/BlackCAT/master/QuantumultX/Icon/me.png
+//running_mode_trigger=filter, filter, 192.168.123.1:all_direct
+//udp_whitelist=1-442, 444-65535
+
+[dns]
+
+//prefer-doh3
+//doh-server = https://i.233py.com/dns-query
+//no-ipv6
+no-system
+server=114.114.114.114
+server=202.141.176.93
+server=202.141.178.13
+server=223.5.5.5
+server=119.29.29.29:53
+server=119.28.28.28
+# > Firebase Cloud Messaging
+address=/mtalk.google.com/108.177.125.188
+# > Google Dl
+server=/dl.google.com/119.29.29.29
+server=/dl.l.google.com/119.29.29.29
+server=/update.googleapis.com/119.29.29.29
+# > Router Admin Panel
+server=/amplifi.lan/system
+server=/router.synology.com/system
+server=/sila.razer.com/system
+server=/router.asus.com/system
+server=/routerlogin.net/system
+server=/orbilogin.com/system
+server=/www.LinksysSmartWiFi.com/system
+server=/LinksysSmartWiFi.com/system
+server=/myrouter.local/system
+server=/www.miwifi.com/system
+server=/miwifi.com/system
+server=/mediarouter.home/system
+server=/tplogin.cn/system
+server=/tplinklogin.net/system
+server=/melogin.cn/system
+server=/falogin.cn/system
+[policy]
+
+static=Hello, server-tag-regex=HK|US, img-url=star.circle.system
+static=Streaming, server-tag-regex=HK|SG, img-url=ipad.landscape.badge.play.system
+available=Chat, server-tag-regex=(FLO|YTO|IMM).*SG, img-url=message.system
+static=NBA, server-tag-regex=TW|HK|SG|JP, img-url=basketball.fill.system
+static=Player, direct, img-url=playpause.fill.system
+static=Mail, resource-tag-regex=FLO, server-tag-regex=US, img-url=envelope.badge.system
+static=Home, direct, server-tag-regex=JP, img-url=internaldrive.system
+[server_remote]
+
+[filter_remote]
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list, tag=MyBlockAds, force-policy=reject, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=Unbreak, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=Hijacking, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=Privacy, force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=AD-Block(DOMAIN-SET), force-policy=reject, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=AD-Block(RULE-SET), force-policy=reject, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/NetEaseMusic/NetEaseMusic.list, tag=NetEase Music, force-policy=Player, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=Chat, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/zbang6/BlackCAT/master/QuantumultX/Filter/mail.list, tag=Mail, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Netflix.list, tag=Netflix, force-policy=NBA, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Prime-Video.list, tag=PrimeVideo, force-policy=Streaming, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Disney/Disney.list, tag=DisneyPlus, force-policy=Streaming, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Filter/NBA.list, tag=NBA, force-policy=NBA, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=Streaming, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/zbang6/BlackCAT/master/Surge/Filter/Emby.list, tag=Emby, force-policy=Player, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=Global, force-policy=Hello, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=China, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/unknowntokyo/surge-list/master/LAN.list, tag=LAN, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
+[rewrite_remote]
+https://raw.githubusercontent.com/deezertidal/QuantumultX-Rewrite/master/rewrite/colorweather.conf, tag=彩云天气, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/rartv/EmbyPublic/test/surge/emby-plugin.sgmodule, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js, tag=TestFlight, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf#out=douyu&outhn=douyu&hide=0&ntf=0, tag=AD, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/elecV2/QuantumultX-Tools/master/betterweb/zhihu.conf, tag=知乎优化, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/zbang6/BlackCAT/master/QuantumultX/Rewrite/rewrite.txt#out=BiliHD.js+Endless.js&outhn=google&hide=1&ntf=0, tag=Snippets, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/zbang6/BlackCAT/master/QuantumultX/Rewrite/crack.txt#out=emby&hide=1&ntf=0, tag=VIP, update-interval=86400, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/zbang6/BlackCAT/master/QuantumultX/Rewrite/Q-Search.txt, tag=Q-Search, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=General, update-interval=86400, opt-parser=false, enabled=true
+[server_local]
+
+
+
+
+
+
+[task_local]
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
+
+
+
+
+
+
+
+[filter_local]
+
+
+
+
+final, Home
+
+[rewrite_local]
+https://member.123.com/sso/login.*signup=0 url 302 https://member.123.com/sso/login?a=1&b=1&c=1&d=1&apple=1&g53o=video&signup=0
+
+
+
+
+
+
+
+
+
+
+
+[http_backend]
+
+
+
+
+
+
+
+
+
+
+
+[mitm]
+passphrase = Hello
+p12 = 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
+
+
+
+hostname = *.123.com, -*.google.com
+
+simple_cert_hostname=api.live.bilibili.com
